@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <main>
+    <div class="splitter">
+      <p>SPLI</p>
+      <p>TTER</p>
+    </div>
+    <div class="container">
+      <div class="container__left">
+        <form class="container_ subtitles">
+          <div class="box">
+            <label class="sub-titles" for="bill">Bill</label> <br>
+            <div id="billHidden" class="hidden">
+              <p class="error">Invalid input!</p>
+            </div> <!-- hidden- error -->
+          </div> <!-- box -->
+          <input class="input" type="text" name="bill" id="bill" required placeholder="0">
+          <img src="./images/icon-dollar.svg" alt="dollar-icon" class="icon">
+        </form> <!-- container_ subtitles -->
+        <div class="container_">
+          <h1 class="subtitles">Select Tip %</h1>
+          <div class="button-grid">
+            <button class="buttons" value="0.05">5%</button>
+            <button class="buttons" value="0.1">10%</button>
+            <button class="buttons" value="0.15">15%</button>
+            <button class="buttons" value="0.25">25%</button>
+            <button class="buttons" value="0.5">50%</button>
+            <input type="text" name="custom" id="custom" class="custom" placeholder="Custom">
+          </div> <!-- button-grid -->
+        </div> <!-- container_ -->
+        <form class="container_ subtitles">
+          <div class="box">
+            <label for="numberp">Number of People</label> <br>
+            <div id="numberHidden" class="hidden">
+              <p class="error">Invalid input!</p>
+            </div> <!-- hidden- error -->
+          </div> <!-- box -->
+          <input class="input" type="text" name="numberp" id="numberp" required placeholder="0">
+          <img src="./images/icon-person.svg" alt="person-icon" class="icon">
+        </form> <!-- container_ subtitles -->
+      </div> <!-- container__left-->
+      <div class="container__right">
+        <div class="container__green">
+          <div class="box">
+            <div class="box1">
+              <h2 class="subtitles_">Tip Amount</h2>
+              <p class="person">/ person</p>
+            </div> <!-- box1 -->
+            <h1 id="amount" class="price">$0.00</h1>
+          </div> <!-- box-->
+          <div class="box">
+            <div class="box1">
+              <h2 class="subtitles_">Total</h2>
+              <p class="person">/ person</p>
+            </div> <!-- box1 -->
+            <h1 id="total" class="price">$0.00</h1>
+          </div> <!-- box -->
+          <div class="reset">
+            <button class="button-reset">reset</button>
+          </div> <!-- reset -->
+        </div> <!-- container__green -->
+      </div> <!-- container__right -->
+    </div> <!-- container -->
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a target="_blank" href="https://github.com/jonasbaek">Jonas Baek</a>.
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
