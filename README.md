@@ -9,4 +9,4 @@ Thanks for checking out this front-end coding challenge. I solved this challenge
 I'm uploading all my projects to track my evolution. Thanks!
 
 
-https://jonasbaek.github.io/basic-to-do-list/tip-calculator-app-challenge
+https://jonasbaek.github.io/tip-calculator-app-challenge/
