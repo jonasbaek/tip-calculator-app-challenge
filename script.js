@@ -19,7 +19,7 @@ let storage = {
   total: "",
 };
 
-//when select tip button is clicked, store the value to storage, and erase custom input
+//when select tip button is clicked, store the button value to storage, and erase custom input
 const storageButton = (element) => {
   if (element.target.className === "buttons") {
     storage.button = element.target.getAttribute("value");
@@ -33,7 +33,7 @@ const storageButton = (element) => {
   }
 };
 
-//function to storage custom tip value if custom input is not empty
+//function to storage custom
 const storageCustom = () => {
   let verify = /^\d+$/.test(customInput.value);
   if (verify && customInput.value.length <= 3) {
@@ -72,7 +72,7 @@ const calculation = () => {
   }
 };
 
-//function to display if the results are valid
+//function to display total and tip amount
 const displayResults = () => {
   if (typeof storage.tip === "number") {
     amount.textContent = "$" + storage.tip.toFixed(2);
