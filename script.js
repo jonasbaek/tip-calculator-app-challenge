@@ -1,4 +1,4 @@
-//all inputs and buttons DOM selects//
+//all inputs and buttons DOM selections//
 let billInput = document.getElementById("bill");
 let customInput = document.getElementById("custom");
 let peopleInput = document.getElementById("numberp");
